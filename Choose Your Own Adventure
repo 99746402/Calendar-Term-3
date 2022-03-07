@@ -1,0 +1,142 @@
+//variables
+int menuChoice, introChoice, middleChoice1, middleChoice2, middleChoice3;
+
+//6 functions
+void menu(){
+    printf("Would you like to play through the story or look at the roadmap?\n");
+    printf("Enter '1' for the story. Enter '2' for the roadmap.\n");
+    scanf("%i", &menuChoice);
+    while(menuChoice != 1 && menuChoice != 2){
+        printf("That is not a choice. Please choose '1' or '2'\n");
+        scanf("%i", &menuChoice);
+    }
+}
+//introduction
+void intro(){
+    printf("One day you are bored in your house and you decide to make plans with your friends to go out\n somewhere. They all agree to go but now need to choose where to go. All of the choices have an even amount of votes\n and you are the deciding factor. There is no particular decision which your friends would not like though.\n The three different choices that your friends would be down to go are the movies, eat out somewhere, or go to the park.\n");
+    printf("Choose an option: 1 (Movies), 2 (Eat), 3(Park)\n");
+    scanf("%i", &introChoice);
+    while(introChoice != 1 && introChoice != 2 && introChoice != 3){
+        printf("That is not a choice. Please choose '1', '2', or '3'\n");
+        scanf("%i", &introChoice);
+    }
+}
+//middle 1
+void middle1(){
+    printf("You have chosen to go to the movies. Unfortunately, There are not many good movies that are premiering\n at the moment. The best movies to choose from are Uncharted, Sing 2, and Shang-Chi. The movie that you\n choose is important to your friends. They wouldn’t be the happiest people if you chose a movie that they did\n not like. \n");
+    printf("Choose which movie to watch: 1 (Uncharted), 2 (Sing 2), 3 (Shang-Chi).\n");
+    scanf("%i", &middleChoice1);
+}
+//middle 2
+void middle2(){
+    printf("You have chosen to go eat out at a restaurant with your friends. The three places that your friends\n  will eat at are Red Robin, Fire Wings, and Oz Korean BBQ. Both Red Robin and Oz Korean BBQ are pretty expensive\n choices. On the other hand, Fire Wings isn’t a very expensive option and you have the option to walk around to\n other places in Delta Shores with your friends. Regardless, you are there to have a good time with your friends. \n");
+    printf("Choose where to eat: 1 (Red Robin), 2 (Fire Wings), 3 (Oz Korean BBQ).\n");
+    scanf("%i", &middleChoice2);
+}
+//middle 3
+void middle3(){
+    printf("You have chosen to go to the park with your friends. The park is big so there is a large amount of\n options you could choose from to do at the park. The three alternatives that you and your friends would like to do\n are play basketball, hide and seek, or play football. Your friends aren’t the most athletic so beating them\n wouldn’t be the hardest task. You do not have much time to hang out so you cannot pick all three activities to do. \n");
+    printf("Choose what to do at the park: 1 (Basketball), 2 (Hide and Seek), 3 (Football).\n");
+    scanf("%i", &middleChoice3);
+}
+//end 1
+void end1(){
+    printf("You chose to watch Uncharted. Overall, everyone liked the movie and no one had any complaints. Everyone\n enjoyed Tom Holland's performance and the intense element of the movie. Victor and Nathan ended up being\n a good duo together throughout the movie. Your friends now think that Uncharted is the best video game based movie.\n");
+    exit (1);
+}
+//end 2
+void end2(){
+    printf("You chose to watch Sing 2. As a result, your friends ended up not liking the movie at all. Every single\n person in the theater disliked the elephant because of how extra she was. It was a silent car ride home.\n Your friends do not want you to pick another movie again.\n");
+    exit (2);
+}
+//end 3
+void end3(){
+    printf("You chose to watch Shang-Chi and the Legend of the Ten Rings. As a result, your friends enjoyed the\n movie a lot. They all thought that it had a really good storyline and the movie also had very well made animations.\n The ending of the movie was exceptionally adequate. In the end, all of your friends, including\n yourself, were very satisfied with the movie.\n");
+    exit (3);
+}
+//end 4
+void end4(){
+    printf("The place you chose to eat at is Red Robin. You decided to eat a Red Tavern burger with fries and\n thought that it was exceptional. The same goes for all of your other friends. To add on to an already great night,\n your friend's parents decided to pay for everyone’s food since it was his birthday. In the end, you had a\n fun and memorable night out with your friends.\n");
+    exit (4);
+}
+//end 5
+void end5(){
+    printf("The place that you have chosen to eat at is Fire Wings. You chose to order a 30 piece pack to share\n with your friend but at the end, did not finish all of them. The lemon pepper and spicy wings did taste good\n though. After eating at Fire Wings you all decided to get some frozen yogurt and walk around Delta Shores. Over at\n Walmart, all of you bought some snacks to take home. In total, that day was successful and you had a good time\n out with your friends.\n");
+    exit (5);
+}
+//end 6
+void end6(){
+    printf("The place you chose to eat at is Oz Korean BBQ. All of your friends have been there except for you so\n it is a new experience for you. The food there was of high quality and is definitely something that you would love\n to try again. The one problem that you had was that you did not have enough money to pay for yourself so you\n had to borrow money from your friend. Luckily, he is a nice person so he said that you didn’t have to worry\n about paying him back. As a result, you have learned your lesson to bring more money than needed in case of\n unexpected events happening like this.\n");
+    exit (6);
+}
+//end 7
+void end7(){
+    printf("You and your friends have chosen to play basketball. You guys decide to play a 4 on 4 full court game.\n You and your friends play on the low hoops because everyone can dunk which makes it  more fun for everyone.\n After some time, you and everyone else go play knockout with the other ball that your friend brought.\n Surprisingly, the people that actually play basketball didn’t win half of the time. \n");
+    exit (7);
+}
+//end 8
+void end8(){
+    printf("You and your friends choose to play hide and seek. To make it even more fun, everywhere in the\n neighborhood of the park is available to hide in. The seeker has everyone’s location enabled on their phone so it\n doesn’t make finding them almost impossible. Games of hide and seek can take half an hour considering there's 7\n other people. In the end, everyone had a great time playing hide and seek.\n");
+    exit (8);
+}
+//end 9
+void end9(){
+    printf("You and your friends decide to play football. Everyone uses the field next to the park to play the\n game. After playing a game you guys then decide to play three flags up. Everyone had fun playing football until\n they finished. After, you and your friends go back to one of your friends' houses to sleep over.\n");
+    exit (9);
+}
+//no roadmap
+void menuChoice1(){
+    printf("Have a fun time with the story!\n");
+}
+//roadmap
+void menuChoice2(){
+    printf("Going to the movies leads you with three options to choose from which are Uncharted, Sing 2, and Shang-Chi.\n Going to eat out gives you three places to choose from which are Red Robin, Fire Wings, and Oz Korean BBQ.\n Going to the park with your friends gives you three activities to do which are Basketball, Hide and Seek, and Football.\n");
+}
+    
+int main(){     //main program to run (logic)
+    menu();
+    if(1 == menuChoice){
+        menuChoice1();
+    }
+    if(2 == menuChoice){
+        menuChoice2();
+    }
+    intro();
+    if(1 == introChoice){
+        middle1();
+        if(middleChoice1 == 1){
+            end1();
+        }
+        if(middleChoice1 == 2){
+            end2();
+        }
+        if (middleChoice1 == 3){
+            end3();
+        }
+    }
+    if(2 == introChoice){
+        middle2();
+        if(middleChoice2 == 1){
+            end4();
+        }
+        if(middleChoice2 == 2){
+            end5();
+        }
+        if(middleChoice2 == 3){
+            end6();
+        }
+    }
+        
+    if(3 == introChoice){
+        middle3();
+        if(middleChoice3 == 1){
+            end7();
+        }
+        if(middleChoice3 == 2){
+            end8();
+        }
+        if(middleChoice3 == 3){
+            end9();
+        }
+    }
+}
