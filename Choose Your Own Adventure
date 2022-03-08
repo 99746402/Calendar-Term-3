@@ -1,6 +1,8 @@
 //variables
 int menuChoice, introChoice, middleChoice1, middleChoice2, middleChoice3;
-
+//random number
+int answer = randint(30,35);
+int answer1 = randint(1,2);
 //6 functions
 void menu(){
     printf("Would you like to play through the story or look at the roadmap?\n");
@@ -46,7 +48,7 @@ void end1(){
 }
 //end 2
 void end2(){
-    printf("You chose to watch Sing 2. As a result, your friends ended up not liking the movie at all. Every single\n person in the theater disliked the elephant because of how extra she was. It was a silent car ride home.\n Your friends do not want you to pick another movie again.\n");
+    printf("You chose to watch Sing ", answer1, ". As a result, your friends ended up not liking the movie at all. Every single\n person in the theater disliked the elephant because of how extra she was. It was a silent car ride home.\n Your friends do not want you to pick another movie again.\n");
     exit (2);
 }
 //end 3
@@ -61,7 +63,7 @@ void end4(){
 }
 //end 5
 void end5(){
-    printf("The place that you have chosen to eat at is Fire Wings. You chose to order a 30 piece pack to share\n with your friend but at the end, did not finish all of them. The lemon pepper and spicy wings did taste good\n though. After eating at Fire Wings you all decided to get some frozen yogurt and walk around Delta Shores. Over at\n Walmart, all of you bought some snacks to take home. In total, that day was successful and you had a good time\n out with your friends.\n");
+    printf("The place that you have chosen to eat at is Fire Wings. You chose to order a ", answer, " piece pack to share\n with your friend but at the end, did not finish all of them. The lemon pepper and spicy wings did taste good\n though. After eating at Fire Wings you all decided to get some frozen yogurt and walk around Delta Shores. Over at\n Walmart, all of you bought some snacks to take home. In total, that day was successful and you had a good time\n out with your friends.\n");
     exit (5);
 }
 //end 6
